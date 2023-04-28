@@ -1,0 +1,17 @@
+{%  extends 'theme.html'   %}
+
+{%  block content   %}
+<h1>Offers</h1>
+<ul>
+    {%  for offer in offers %}
+    <li>{{offer.code}}
+    {%  endfor %}
+</ul>
+<h1>Products</h1>
+<ul>
+    {%  for product in products %}
+    <li>{{product.name}}</li>
+    {%  endfor %}
+</ul>
+{%  endblock    %}
+
